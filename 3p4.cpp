@@ -1,13 +1,22 @@
 #include <iostream>
-#include <bits/stdc++.h>
 using namespace std;
+class Square {
+    public : 
+        int num;
+};
+
+// friend function definition
+int sq(Square d) {
+    
+    //accessing private members from the friend function
+    d.num = d.num*d.num;
+    return d.num;
+}
 
 int main() {
-    
-    list<int> arr;
-    
-    arr.push_back(123);
-    cout << arr.front();
-
+    Square test;
+    cout << "Enter the number : " ;
+    cin >> test.num;
+    cout << "square is :  " << sq(test);
     return 0;
 }
