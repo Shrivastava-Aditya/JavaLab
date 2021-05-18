@@ -6,10 +6,9 @@ class Cube {
         friend int cube(Cube);
 };
 
-// friend function definition
 int inline cube(Cube d) {
     
-    //accessing private members from the friend function
+
     d.num = d.num*d.num*d.num;
     return d.num;
 }
