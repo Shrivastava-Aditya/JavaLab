@@ -5,10 +5,8 @@ class Square {
         int num;
 };
 
-// friend function definition
 int sq(Square d) {
     
-    //accessing private members from the friend function
     d.num = d.num*d.num;
     return d.num;
 }
